@@ -1,0 +1,10 @@
+git clone https://github.com/joyent/node.git
+cd node/
+./configure --prefix=/home/utahta/opt/node
+make -j 4
+make install
+
+curl http://npmjs.org/install.sh | sh
+npm install socket.io
+npm install express
+npm install jade
